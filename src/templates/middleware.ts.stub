@@ -1,0 +1,6 @@
+import type { Context, Next } from "hono"
+
+export async function {{ name }}(c: Context, next: Next) {
+  // TODO: implement middleware logic
+  await next()
+}

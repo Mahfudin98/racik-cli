@@ -1,0 +1,9 @@
+import { Db } from "mongodb"
+
+export async function up(db: Db) {
+  // TODO: implement migration
+}
+
+export async function down(db: Db) {
+  // TODO: rollback migration
+}

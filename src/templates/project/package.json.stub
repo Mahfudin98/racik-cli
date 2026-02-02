@@ -1,0 +1,11 @@
+{
+  "name": "{{ name }}",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^4.11.7"
+  }
+}
