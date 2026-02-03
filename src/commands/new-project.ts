@@ -4,7 +4,8 @@ import { spawnSync } from "child_process";
 import { copyTemplateDir } from "../utils/copy-template";
 import { resolveTemplate } from "../utils/resolve-template";
 
-export function newProject(name: string) {
+export function newProject(args: string[]) {
+  const name = args[0];
   if (!name) {
     console.error("Error: project name is required");
     process.exit(1);

@@ -4,9 +4,11 @@ import { makeMigration } from "./make-migration";
 import { makeMiddleware } from "./make-middleware";
 import { makeTest } from "./make-test";
 import { newProject } from "./new-project";
+import { makeClass } from "./make-class";
+import { makeSeeder } from "./make-seeder";
 
 type Command = {
-  run: (arg?: string) => void;
+  run: (args: string[]) => void;
   description: string;
 };
 
@@ -34,5 +36,13 @@ export const commands: Record<string, Command> = {
   new: {
     run: newProject,
     description: "Create a new API project",
+  },
+  "make:class": {
+    run: makeClass,
+    description: "Create a new class (supports subfolders)",
+  },
+  "make:seeder": {
+    run: makeSeeder,
+    description: "Create a new database seeder",
   },
 };

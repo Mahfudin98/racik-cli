@@ -1,0 +1,7 @@
+export async function up(db: any) {
+  // TODO: write SQL here
+}
+
+export async function down(db: any) {
+  // TODO
+}

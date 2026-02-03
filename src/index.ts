@@ -17,4 +17,4 @@ if (!command) {
   process.exit(1);
 }
 
-command.run(arg);
+command.run(process.argv.slice(3));
